@@ -68,7 +68,7 @@ section {
 
 /* =========================================
    DENSE GROOVY SWIRL BACKGROUND
-   Original blush-pink pattern preserved
+   ORIGINAL — UNCHANGED
 ========================================= */
 
 body::before {
@@ -210,14 +210,6 @@ body::before {
     color: var(--dark);
     font-size: 0.78rem;
     font-weight: 700;
-}
-
-.hero-actions {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 25px;
 }
 
 /* HERO ART */
@@ -365,12 +357,7 @@ body::before {
     color: var(--blush);
 }
 
-.section-intro {
-    color: var(--muted);
-    margin-top: 12px;
-    max-width: 600px;
-}
-
+.section-intro,
 .section-description {
     color: var(--muted);
     margin-top: 12px;
@@ -757,7 +744,6 @@ body::before {
 
 /* =========================================
    PROFILE PAGE
-   Supports existing resume.html classes
 ========================================= */
 
 .resume-page {
@@ -769,8 +755,6 @@ body::before {
     border-radius: 8px;
     box-shadow: 0 12px 38px rgba(104, 115, 74, 0.08);
 }
-
-/* Existing profile header */
 
 .resume-top {
     display: flex;
@@ -802,8 +786,6 @@ body::before {
 .resume-actions {
     flex: 0 0 auto;
 }
-
-/* Existing profile sections */
 
 .resume-section {
     padding: 25px 0;
@@ -865,8 +847,6 @@ body::before {
     list-style-type: disc;
 }
 
-/* Profile skills */
-
 .resume-skills {
     display: flex;
     flex-wrap: wrap;
@@ -881,8 +861,6 @@ body::before {
     font-size: 0.82rem;
     font-weight: 700;
 }
-
-/* Profile contact */
 
 .resume-contact {
     display: flex;
@@ -907,6 +885,42 @@ body::before {
     display: inline-block;
     margin-top: 25px;
     border-bottom: 0;
+}
+
+/* =========================================
+   PROFILE PAGE — CURRENT HTML CLASSES
+========================================= */
+
+.profile-section {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.profile-section .section-heading {
+    margin-bottom: 28px;
+}
+
+.profile-section .section-heading h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profile-hero {
+    margin-bottom: 45px;
+}
+
+.profile-project-list {
+    display: grid;
+    gap: 25px;
+}
+
+.timeline-list {
+    display: grid;
+    gap: 25px;
+}
+
+.profile-skills-grid {
+    gap: 22px;
 }
 
 /* =========================================
@@ -987,8 +1001,7 @@ body::before {
         font-size: 0.95rem;
     }
 
-    .hero-tags,
-    .hero-actions {
+    .hero-tags {
         justify-content: center;
     }
 
@@ -1052,8 +1065,6 @@ body::before {
         gap: 4px;
     }
 
-    /* Existing profile page */
-
     .resume-page {
         width: min(100% - 30px, 1050px);
         margin: 18px auto 30px;
@@ -1094,6 +1105,15 @@ body::before {
         height: 16px !important;
         max-width: 16px !important;
         max-height: 16px !important;
+    }
+
+    .profile-section {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .profile-hero {
+        margin-bottom: 35px;
     }
 }
 
@@ -1176,120 +1196,159 @@ button:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
-/* Better spacing between profile sections */
-.profile-section {
-    margin-top: 64px;
-    margin-bottom: 64px;
-}
 
-/* Heading spacing */
-.profile-section .section-heading {
-    margin-bottom: 30px;
-}
+/* =========================================
+   ALIGNMENT FIXES — HOMEPAGE
+========================================= */
 
-.profile-section .section-heading h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Space between the introduction and education */
-.profile-hero {
-    margin-bottom: 64px;
-}
-
-/* Space between project entries */
-.profile-project-list {
-    display: grid;
-    gap: 32px;
-}
-
-/* Space between education entries */
-.timeline-list {
-    display: grid;
-    gap: 28px;
-}
-
-/* Space between skill cards */
-.profile-skills-grid {
-    gap: 22px;
-}
-
-/* Mobile spacing */
-@media (max-width: 768px) {
-    .profile-section {
-        margin-top: 44px;
-        margin-bottom: 44px;
-    }
-
-    .profile-section .section-heading {
-        margin-bottom: 22px;
-    }
-}
-/* Homepage: consistent center alignment */
-body:not(.profile-body) .hero,
-body:not(.profile-body) .hero-content,
-body:not(.profile-body) .section,
-body:not(.profile-body) .section-heading,
-body:not(.profile-body) .about-content,
-body:not(.profile-body) .skills-section,
-body:not(.profile-body) .projects-section,
-body:not(.profile-body) .highlights-section,
-body:not(.profile-body) .contact-section {
+body:not(.profile-body) .hero {
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 body:not(.profile-body) .hero-content {
-    align-items: center;
-}
-
-body:not(.profile-body) .hero h1 {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-body:not(.profile-body) .hero-description,
-body:not(.profile-body) .section-intro {
-    margin-left: auto;
-    margin-right: auto;
+body:not(.profile-body) .hero h1,
+body:not(.profile-body) .hero h2,
+body:not(.profile-body) .hero .eyebrow {
+    text-align: center;
 }
 
-body:not(.profile-body) .hero-tags,
+body:not(.profile-body) .hero-description {
+    max-width: 650px;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
 body:not(.profile-body) .hero-actions,
+body:not(.profile-body) .hero-tags,
 body:not(.profile-body) .contact-links,
 body:not(.profile-body) .social-icons {
     justify-content: center;
 }
 
 body:not(.profile-body) .section-heading {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body:not(.profile-body) .section-heading h2,
+body:not(.profile-body) .section-description {
+    text-align: center;
+}
+
+body:not(.profile-body) .section-description,
+body:not(.profile-body) .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body:not(.profile-body) .about-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+    border-left: none;
+    text-align: center;
+}
+
+body:not(.profile-body) .about-content p {
+    text-align: center;
+}
+
+body:not(.profile-body) .skill-card {
+    text-align: center;
+}
+
+body:not(.profile-body) .project-card {
+    text-align: center;
     align-items: center;
 }
-/* Profile page: all headings aligned left */
+
+body:not(.profile-body) .project-topline {
+    width: 100%;
+}
+
+body:not(.profile-body) .project-tags {
+    justify-content: center;
+}
+
+body:not(.profile-body) .project-card .text-link {
+    align-self: center;
+}
+
+/* =========================================
+   ALIGNMENT FIXES — PROFILE PAGE
+========================================= */
+
 .profile-body .profile-hero,
-.profile-body .profile-section,
+.profile-body .profile-section {
+    text-align: left;
+}
+
 .profile-body .section-heading {
-    text-align: left;
-    align-items: flex-start;
-}
-
-/* Make the name match the section heading style */
-.profile-body .profile-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    font-weight: 600;
-    color: inherit;
-    letter-spacing: -0.5px;
-    text-align: left;
+    width: 100%;
     margin-left: 0;
+    margin-right: 0;
+    text-align: left;
 }
 
-/* Keep the name's punctuation consistent */
-.profile-body .profile-hero h1 span {
-    color: #E9A0B5;
-}
-
-/* Ensure all section headings remain left aligned */
 .profile-body .section-heading h2 {
     text-align: left;
     margin-left: 0;
+}
+
+.profile-body .profile-hero h1 {
+    color: var(--olive);
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    text-align: left;
+    margin: 0 0 16px;
+    white-space: normal;
+}
+
+.profile-body .profile-hero h1 span {
+    color: var(--blush);
+}
+
+.profile-body .profile-subtitle,
+.profile-body .profile-summary {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.profile-body .profile-project,
+.profile-body .profile-skill,
+.profile-body .profile-skills-grid {
+    text-align: left;
+}
+
+.profile-body .profile-project ul {
+    padding-left: 22px;
+}
+
+/* =========================================
+   FINAL MOBILE ALIGNMENT
+========================================= */
+
+@media (max-width: 700px) {
+    body:not(.profile-body) .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .profile-body .profile-hero h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
 }
