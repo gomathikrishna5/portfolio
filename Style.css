@@ -1225,3 +1225,71 @@ button:focus-visible {
         margin-bottom: 22px;
     }
 }
+/* Homepage: consistent center alignment */
+body:not(.profile-body) .hero,
+body:not(.profile-body) .hero-content,
+body:not(.profile-body) .section,
+body:not(.profile-body) .section-heading,
+body:not(.profile-body) .about-content,
+body:not(.profile-body) .skills-section,
+body:not(.profile-body) .projects-section,
+body:not(.profile-body) .highlights-section,
+body:not(.profile-body) .contact-section {
+    text-align: center;
+}
+
+body:not(.profile-body) .hero-content {
+    align-items: center;
+}
+
+body:not(.profile-body) .hero h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body:not(.profile-body) .hero-description,
+body:not(.profile-body) .section-intro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body:not(.profile-body) .hero-tags,
+body:not(.profile-body) .hero-actions,
+body:not(.profile-body) .contact-links,
+body:not(.profile-body) .social-icons {
+    justify-content: center;
+}
+
+body:not(.profile-body) .section-heading {
+    align-items: center;
+}
+/* Profile page: all headings aligned left */
+.profile-body .profile-hero,
+.profile-body .profile-section,
+.profile-body .section-heading {
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* Make the name match the section heading style */
+.profile-body .profile-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600;
+    color: inherit;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Keep the name's punctuation consistent */
+.profile-body .profile-hero h1 span {
+    color: #E9A0B5;
+}
+
+/* Ensure all section headings remain left aligned */
+.profile-body .section-heading h2 {
+    text-align: left;
+    margin-left: 0;
+}
