@@ -1176,3 +1176,52 @@ button:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+/* Better spacing between profile sections */
+.profile-section {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+/* Heading spacing */
+.profile-section .section-heading {
+    margin-bottom: 30px;
+}
+
+.profile-section .section-heading h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Space between the introduction and education */
+.profile-hero {
+    margin-bottom: 64px;
+}
+
+/* Space between project entries */
+.profile-project-list {
+    display: grid;
+    gap: 32px;
+}
+
+/* Space between education entries */
+.timeline-list {
+    display: grid;
+    gap: 28px;
+}
+
+/* Space between skill cards */
+.profile-skills-grid {
+    gap: 22px;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+    .profile-section {
+        margin-top: 44px;
+        margin-bottom: 44px;
+    }
+
+    .profile-section .section-heading {
+        margin-bottom: 22px;
+    }
+}
