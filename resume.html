@@ -1,108 +1,242 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>P Gomathi Krishna - Resume</title>
-  <link rel="stylesheet" href="Style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profile, education, projects, achievements, and technical skills of P Gomathi Krishna.">
+  <title>Profile | P Gomathi Krishna</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
-<body class="resume">
-  <!-- Navigation -->
-  <a class="btn download-link" href="docs/resume.pdf" target="_blank">Download Resume</a>
+<body class="profile-body">
 
-  <!-- Main Content -->
-  <main class="content-wrapper">
-    <!-- Profile Section -->
-    <section class="resume-section">
-      <h2>Profile</h2>
-      <p>
-      Student pursuing an Undergraduate degree in BTech with specialization in CSE AI and ML at VIT-AP University.
-      Has experience in AI. Was an intern in Indiaspace Lab Technical Winter Internship Training Program in 2024.
-      Was an intern in AI at Rinex Education in 2023. I am the Vice President of Women Innovator's Network at VIT-AP.
+  <header class="site-header">
+    <a href="index.html" class="logo">GK<span>.</span></a>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="#profile">About</a>
+      <a href="#education">Education</a>
+      <a href="#profile-projects">Projects</a>
+      <a href="#profile-contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="resume-page">
+
+    <!-- PROFILE INTRODUCTION -->
+    <section class="profile-hero" id="profile">
+      <p class="section-kicker">GET TO KNOW ME</p>
+      <h1>P Gomathi Krishna<span>.</span></h1>
+
+      <p class="profile-subtitle">
+        Computer Science and Engineering · Artificial Intelligence & Machine Learning
       </p>
-      <p><a href="index.html">← Back to Homepage</a></p>
+
+      <p class="profile-summary">
+        Computer Science and Engineering student specialising in AI and
+        Machine Learning at VIT-AP University. Interested in software
+        development, artificial intelligence, natural language processing,
+        and building practical technology solutions. I enjoy learning
+        new concepts, solving problems, and applying my knowledge through
+        projects and collaborative experiences.
+      </p>
+
+      <div class="profile-actions">
+        <button class="button button-primary" onclick="window.print()">Print / Save as PDF ↗</button>
+        <a href="index.html" class="button button-outline">← Back to portfolio</a>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="resume-section">
-      <h2>Projects</h2>
-      <ul>
-        <li>Cats vs Dogs classification in Python</li>
-        <li>MNIST Dataset classification</li>
-        <li>Superscalar CPU model in Python</li>
+    <!-- EDUCATION -->
+    <section class="profile-section" id="education">
+      <div class="section-heading">
+        <p class="section-kicker">ACADEMIC BACKGROUND</p>
+        <h2>Education<span>.</span></h2>
+      </div>
+
+      <div class="timeline-list">
+
+        <article class="timeline-item">
+          <span class="timeline-date">2023 – Present</span>
+          <div>
+            <h3>VIT-AP University</h3>
+            <p class="timeline-subtitle">B.Tech · Computer Science and Engineering (AI & ML)</p>
+            <p>CGPA: 8.71 / 10</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-date">2021 – 2023</span>
+          <div>
+            <h3>Narayana Junior College, Eluru</h3>
+            <p class="timeline-subtitle">Intermediate</p>
+            <p>Percentage: 96.9%</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-date">2020 – 2021</span>
+          <div>
+            <h3>C.R. Reddy Public School, Eluru</h3>
+            <p class="timeline-subtitle">Secondary School Education</p>
+            <p>Percentage: 91.6%</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="profile-section" id="profile-projects">
+      <div class="section-heading">
+        <p class="section-kicker">WHAT I'VE BUILT</p>
+        <h2>Projects<span>.</span></h2>
+      </div>
+
+      <div class="profile-project-list">
+
+        <article class="profile-project">
+          <h3>Document Summary Assistant</h3>
+          <p class="project-stack">React · Node.js · Express · Gemini · OCR</p>
+          <ul>
+            <li>Developed a web application for uploading and processing PDF and image files.</li>
+            <li>Integrated document parsing and OCR to extract text from uploaded files.</li>
+            <li>Used generative AI to create short, medium, and detailed summaries.</li>
+          </ul>
+          <a class="text-link" href="https://github.com/gomathikrishna5/document-summary-assistant" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a>
+        </article>
+
+        <article class="profile-project">
+          <h3>FoodPrep</h3>
+          <p class="project-stack">MongoDB · Express · React · Node.js</p>
+          <ul>
+            <li>Built a MERN-based food ordering application.</li>
+            <li>Created separate interfaces for users and administrators.</li>
+            <li>Implemented food listings, cart management, and order handling.</li>
+          </ul>
+          <a class="text-link" href="https://github.com/gomathikrishna5/FoodPrep" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a>
+        </article>
+
+        <article class="profile-project">
+          <h3>NLP Flowchart Generator</h3>
+          <p class="project-stack">Python · Gemini · NLP · Graphviz</p>
+          <ul>
+            <li>Developed a tool that converts natural-language descriptions into structured flowcharts.</li>
+            <li>Used generative AI to identify steps and decisions from text.</li>
+            <li>Used Graphviz to generate visual representations of the extracted workflow.</li>
+          </ul>
+          <a class="text-link" href="https://github.com/gomathikrishna5/nlp-flowchart-generator" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="profile-section">
+      <div class="section-heading">
+        <p class="section-kicker">RECOGNITION & LEARNING</p>
+        <h2>Achievements & Certifications<span>.</span></h2>
+      </div>
+
+      <ul class="profile-list">
+        <li>
+          <strong>NPTEL – Generative AI for Computer Vision:</strong>
+          Scored 100% and received Topper recognition.
+        </li>
+        <li>
+          <strong>NPTEL – Mathematical Foundations of Generative AI:</strong>
+          Scored 91%.
+        </li>
+        <li>
+          <strong>Visteon Scholar Program:</strong>
+          Selected for the scholar program.
+        </li>
+        <li>
+          <strong>India Space Lab:</strong>
+          Participated in the Virtual Technical Winter Internship Training Program.
+        </li>
+        <li>
+          <strong>Rinex Education:</strong>
+          Completed AI-related technical training.
+        </li>
       </ul>
-      <h3>Project Links</h3>
-      <ul>
-        <li><a href="https://colab.research.google.com/drive/1CBmS2qxqp9OgEZpP_GnHlne5L1t3flsX?usp=sharing" target="_blank">Cats vs Dogs - Google Colab</a></li>
-      </ul>
     </section>
 
-    <!-- Education Section -->
-    <section class="resume-section">
-      <h2>Education</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Institution</th>
-            <th>Course</th>
-            <th>Years</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>C.R Reddy School, Eluru</td>
-            <td>10th</td>
-            <td>2020–2021</td>
-            <td>92%</td>
-          </tr>
-          <tr>
-            <td>Narayana Jr. College, Eluru</td>
-            <td>Intermediate</td>
-            <td>2021–2023</td>
-            <td>97%</td>
-          </tr>
-          <tr>
-            <td>VIT-AP University</td>
-            <td>B.Tech CSE (AI & ML)</td>
-            <td>2023–Present</td>
-            <td>87%</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- LEADERSHIP -->
+    <section class="profile-section">
+      <div class="section-heading">
+        <p class="section-kicker">LEADERSHIP</p>
+        <h2>Beyond academics<span>.</span></h2>
+      </div>
+
+      <article class="profile-project">
+        <h3>Vice President – Women Innovator Network, VIT-AP</h3>
+        <p>
+          Served as the Vice President of the Women Innovator Network,
+          contributing to student engagement and initiatives that
+          encourage innovation.
+        </p>
+      </article>
     </section>
 
-    <!-- Skills Section -->
-    <section class="resume-section">
-      <h2>Technical Skills</h2>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Python</p>
-          <p>Java</p>
-          <p>C</p>
-          <p>C++</p>
-          <p>DBMS</p>
-          <p>DSA</p>
-          <p>Microsoft</p>
-          <p>Cloud computing</p>
+    <!-- TECHNICAL SKILLS -->
+    <section class="profile-section">
+      <div class="section-heading">
+        <p class="section-kicker">TECHNICAL TOOLKIT</p>
+        <h2>Technical Skills<span>.</span></h2>
+      </div>
+
+      <div class="profile-skills-grid">
+        <div class="profile-skill">
+          <h3>Programming Languages</h3>
+          <p>Python, Java, C, C++, JavaScript</p>
+        </div>
+
+        <div class="profile-skill">
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, React, Node.js, Express.js</p>
+        </div>
+
+        <div class="profile-skill">
+          <h3>AI & Machine Learning</h3>
+          <p>Machine Learning, Generative AI, NLP, OCR</p>
+        </div>
+
+        <div class="profile-skill">
+          <h3>Databases & Tools</h3>
+          <p>SQL, MongoDB, Git, Graphviz</p>
+        </div>
+
+        <div class="profile-skill">
+          <h3>Core Concepts</h3>
+          <p>DBMS, Data Structures, Object-Oriented Programming</p>
+        </div>
+      </div>
     </section>
+
+    <!-- CONTACT -->
+    <section class="profile-section profile-contact" id="profile-contact">
+      <div class="section-heading">
+        <p class="section-kicker">GET IN TOUCH</p>
+        <h2>Contact<span>.</span></h2>
+      </div>
+
+      <p>Email: <a href="mailto:p.gomathikrishna@gmail.com">p.gomathikrishna@gmail.com</a></p>
+
+      <p>LinkedIn:
+        <a href="https://www.linkedin.com/in/gomathi-krishna-73739b313/" target="_blank" rel="noopener noreferrer">linkedin.com/in/gomathi-krishna-73739b313</a>
+      </p>
+
+      <p>GitHub:
+        <a href="https://github.com/gomathikrishna5" target="_blank" rel="noopener noreferrer">github.com/gomathikrishna5</a>
+      </p>
+    </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 P Gomathi Krishna | <a href="mailto:p.gomathikrishna@gmail.com">p.gomathikrishna@gmail.com</a></p>
-    <ul class="socials">
-      <li>
-        <a href="https://x.com/PGomathikrishna" target="_blank">
-          <img src="icon-logo-twitter.png" alt="Twitter" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/gomathi-krishna-73739b313/" target="_blank">
-          <img src="icon-logo-linkedin.png" alt="LinkedIn" />
-        </a>
-      </li>
-    </ul>
+  <footer class="site-footer">
+    <p>© 2026 P Gomathi Krishna</p>
   </footer>
+
 </body>
 </html>

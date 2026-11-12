@@ -1,59 +1,266 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>P Gomathi Krishna | Student</title>
-    <link rel="icon" type="image/x-icon" href="images/cv.png" />
-    <link rel="stylesheet" href="Style.css" />
-  </head>
-  <body class="home">
-    <!-- INTRO -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <h1>P Gomathi Krishna</h1>
-          <h2>Student</h2>
-        </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of P Gomathi Krishna, Computer Science and Engineering student specialising in AI and Machine Learning.">
+  <title>P Gomathi Krishna | Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
 
-        <!-- ABOUT ME -->
-        <main>
-          <section class="resume-section">
-            <h2>About Me</h2>
-            <p id="profile-summary">
-              B.Tech CSE (AI & ML) student at VIT-AP. Passionate about tech and problem-solving,
-             with skills in programming and AI model development. Strong teamwork and communication
-             skills. Keen to apply AI knowledge in real-world applications and collaborate on innovative tech.
-            </p>
-            <p>
-              To learn more about my education history, check out my
-              <a href="resume.html">resume</a>. Thanks for stopping by!
-            </p>
-          </section>
-        </main>
+  <header class="site-header">
+    <a href="index.html" class="logo">GK<span>.</span></a>
+    <nav class="navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>P Gomathi Krishna<span>.</span></h1>
+        <h2>Curious mind. Creative thinker. Aspiring technologist.</h2>
+
+        <p class="hero-description">
+          I'm a Computer Science and Engineering student specialising in
+          Artificial Intelligence and Machine Learning at VIT-AP.
+          I enjoy exploring technology, building practical solutions,
+          and learning something new with every project.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">Explore my work ↗</a>
+          <a href="resume.html" class="button button-outline">View my profile ↗</a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- FOOTER INFO, SOCIAL MEDIA -->
-    <footer>
-      <p>
-       © 2025 by P Gomathi Krishna |
-        <a href="mailto:p.gomathikrishna@gmail.com">p.gomathikrishna@gmail.com</a>
-      </p>
-      <ul class="socials">
-        <li>
-          <a href="https://www.linkedin.com/in/gomathi-krishna-73739b313/" target="_blank">
-            <img src="icon-logo-linkedin.png" />
-            Linkedin
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/gomathikrishna5" target="_blank">
-            <img src="github logo.png"/>
-            Github
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="section-kicker">A LITTLE ABOUT ME</p>
+        <h2>More than just <span>code.</span></h2>
+      </div>
+
+      <div class="about-content">
+        <p>
+          I am currently pursuing my B.Tech in Computer Science and
+          Engineering with a specialisation in AI and Machine Learning
+          at VIT-AP University.
+        </p>
+        <p>
+          My interests span software development, artificial intelligence,
+          natural language processing, and building technology that
+          solves real-world problems. I enjoy understanding how things
+          work, experimenting with ideas, and turning what I learn into
+          something useful.
+        </p>
+        <p>
+          I believe growth comes from staying curious, being open to
+          challenges, and having the willingness to keep learning.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="section-kicker">MY TOOLKIT</p>
+        <h2>Things I <span>work with.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-number">01</span>
+          <h3>Programming</h3>
+          <p>Python · Java · C · C++ · JavaScript</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <h3>Web Development</h3>
+          <p>HTML · CSS · React · Node.js · Express</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <h3>AI & Data</h3>
+          <p>Machine Learning · NLP · Generative AI · OCR</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">04</span>
+          <h3>Databases & Tools</h3>
+          <p>SQL · MongoDB · Git · Graphviz</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="section-kicker">SELECTED WORK</p>
+        <h2>Ideas turned into <span>projects.</span></h2>
+        <p class="section-description">
+          A few things I've explored, designed, and built along the way.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-category">AI · DOCUMENT PROCESSING</span>
+            <span class="project-symbol"></span>
+          </div>
+          <h3>Document Summary Assistant</h3>
+          <p>
+            A web application that extracts and summarises information
+            from uploaded PDFs and images using document parsing,
+            OCR, and generative AI. Users can generate short, medium,
+            or detailed summaries.
+          </p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Gemini</span>
+            <span>OCR</span>
+          </div>
+          <a class="text-link" href="https://github.com/gomathikrishna5/document-summary-assistant" target="_blank" rel="noopener noreferrer">View project ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-category">WEB DEVELOPMENT · MERN</span>
+            <span class="project-symbol"></span>
+          </div>
+          <h3>FoodPrep</h3>
+          <p>
+            A food ordering application built with separate user and
+            admin interfaces. It supports food listings, cart
+            management, and order handling.
+          </p>
+          <div class="project-tags">
+            <span>MongoDB</span>
+            <span>Express</span>
+            <span>React</span>
+            <span>Node.js</span>
+          </div>
+          <a class="text-link" href="https://github.com/gomathikrishna5/FoodPrep" target="_blank" rel="noopener noreferrer">View project ↗</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-category">NLP · VISUALISATION</span>
+            <span class="project-symbol"></span>
+          </div>
+          <h3>NLP Flowchart Generator</h3>
+          <p>
+            A tool that converts natural-language descriptions into
+            structured flowcharts using language processing and
+            graph visualisation.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Gemini</span>
+            <span>NLP</span>
+            <span>Graphviz</span>
+          </div>
+          <a class="text-link" href="https://github.com/gomathikrishna5/nlp-flowchart-generator" target="_blank" rel="noopener noreferrer">View project ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="section highlights-section" id="highlights">
+      <div class="section-heading">
+        <p class="section-kicker">MILESTONES</p>
+        <h2>A few proud <span>moments.</span></h2>
+      </div>
+
+      <div class="highlight-list">
+
+        <article class="highlight-item">
+          <span class="highlight-year">NPTEL</span>
+          <div>
+            <h3>Generative AI for Computer Vision</h3>
+            <p>Scored 100% and received Topper recognition.</p>
+          </div>
+        </article>
+
+        <article class="highlight-item">
+          <span class="highlight-year">NPTEL</span>
+          <div>
+            <h3>Mathematical Foundations of Generative AI</h3>
+            <p>Achieved a score of 91%.</p>
+          </div>
+        </article>
+
+        <article class="highlight-item">
+          <span class="highlight-year">2026</span>
+          <div>
+            <h3>Visteon Scholar Program</h3>
+            <p>Selected for the Visteon Scholar Program.</p>
+          </div>
+        </article>
+
+        <article class="highlight-item">
+          <span class="highlight-year">VIT-AP</span>
+          <div>
+            <h3>Women Innovator Network</h3>
+            <p>Former Vice President.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="section-kicker">LET'S CONNECT</p>
+        <h2>Have an idea? Let's <span>talk.</span></h2>
+        <p class="section-description">
+          I'm always open to meaningful conversations, learning
+          opportunities, and interesting collaborations.
+        </p>
+      </div>
+
+      <a class="contact-email" href="mailto:p.gomathikrishna@gmail.com">
+        p.gomathikrishna@gmail.com ↗
+      </a>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/gomathi-krishna-73739b313/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/gomathikrishna5" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+
+      <div class="social-icons">
+        <a class="social-icon" href="https://www.linkedin.com/in/gomathi-krishna-73739b313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="icon-logo-linkedin.png" alt="LinkedIn">
+        </a>
+        <a class="social-icon" href="https://github.com/gomathikrishna5" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="github logo.png" alt="GitHub">
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 P Gomathi Krishna</p>
+    <p>Made with curiosity and a little creativity.</p>
+  </footer>
+
+</body>
 </html>
