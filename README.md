@@ -3,7 +3,7 @@
 Computer Science and Engineering student specialising in AI & ML at VIT-AP University.
 
 ## Portfolio
-[Visit My Portfolio](ADD_PORTFOLIO_LINK)
+[Visit My Portfolio](https://p-gomathi-krishna-portfolio.onrender.com)
 
 ## Projects
 - [Document Summary Assistant](https://github.com/gomathikrishna5/document-summary-assistant)
